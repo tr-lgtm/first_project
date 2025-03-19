@@ -17,7 +17,7 @@ bool isSimple(int number)
 
 int sumSimpleElementArray(int* array, int size)
 {
-     int sum_simple{};
+     int sum_simple{0};
         for(int i{}; i < size; i++)
         {
             if(isSimple(array[i])) 
