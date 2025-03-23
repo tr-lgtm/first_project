@@ -1,7 +1,11 @@
+#include "indexMinMaxElement.h"
 template<class Type>
-Type CalculateAverage(Type *  array, int size)
+double CalculateAverage(Type *  array, int size)
 {
-double arithmetic_mean{};
-arithmetic_mean = (1.0 * ( array[IndexMaxElement(array, size)] + array[IndexMinElement(array, size)] )) / 2;
-    return arithmetic_mean;
+double sum{0};
+    for(int i{indexMinElement(array, size) + 1 }; i < indexMaxElement(array, size); i++)
+        {
+            sum += array[i];
+        }
+    return sum / (indexMaxElement(array, size) - indexMinElement(array, size));
 }
