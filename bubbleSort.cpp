@@ -4,7 +4,6 @@ bool SortByDescending(T numberOne,T numberTwo)
     return numberOne > numberTwo;
 }
 
-
 template <typename T>
 bool SortByAscending(T numberOne,T numberTwo)
 {
