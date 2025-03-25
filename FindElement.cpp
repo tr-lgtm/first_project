@@ -1,14 +1,13 @@
 template<class Type>
-Type FindElement(Type* array, int size)
+int FindElement(Type* array, int size)
 {
-    int element{-1};
-    int position{};
-    int input{};
-    std::cout << "Enter element:\n";
-    std::cin >> input;
+    int position{-1};
+    int the_desired_element{};
+    std::cout << "Enter the item you want to find:\n";
+    std::cin >> the_desired_element;
     for (int i = 0; i < size; i++)
     {
-        if (array[index] > input)
+        if (array[index] > the_desired_element)
         {
             position = i;
         }
